@@ -11,7 +11,8 @@
         "ext-pcre": "*",
         "kamisama/cake-resque": "4.1.2",
         "pear/crypt_gpg": "1.6.7",
-        "monolog/monolog": "1.24.0"
+        "monolog/monolog": "1.24.0",
+        "tomoconnor-pl/openid-connect-php": "okta-fix"
     },
     "require-dev": {
         "phpunit/phpunit": "^8",
@@ -43,5 +44,11 @@
     "config": {
         "vendor-dir": "Vendor",
         "optimize-autoloader": true
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/tomoconnor-pl/OpenID-Connect-PHP"
+        }
+    ]
 }

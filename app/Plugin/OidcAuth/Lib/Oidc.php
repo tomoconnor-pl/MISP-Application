@@ -304,7 +304,9 @@ class Oidc
         if ($this->getConfig('offline_access', false)) {
             $oidc->addScope('offline_access');
         }
-
+        $oidc->addScope('email'); // https://github.com/MISP/MISP/issues/8598
+        $oidc->addScope('groups');
+        
         $oidc->setRedirectURL(Configure::read('MISP.baseurl') . '/users/login');
         $this->oidcClient = $oidc;
         return $oidc;
