@@ -47,7 +47,8 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/tomoconnor-pl/OpenID-Connect-PHP.git"
+            "url": "https://github.com/tomoconnor-pl/OpenID-Connect-PHP.git",
+            "no-api": true
         }
     ]
 }
